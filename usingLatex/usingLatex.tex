@@ -58,7 +58,13 @@ To refer to another part of the document one must use a combination of the \emph
 
 \section{Citing Bibliographic References}
 
-Bibliographic references are stored in a database (.bib file extension), this contains a list of articles, proceedings, books, thesis and so forth. Each type of publication has a number of required fields such as a unique identifier, author and title. To cite a references within the main body text one must use the \emph{\textbackslash cite} command as in the following examples.  Albert Einstein \cite{book:einsteinBrownianMovement} for example is well known for his work on Brownian Movement. The SETI@Home project \cite{web:berkeleyBOINC} is an example of a webpage citation. One can also work with articles \cite{art:Moller2003HWRastArch}, MSc Thesis \cite{msc:Edberg2007FluxgateMagnetometer}, PhD Thesis \cite{phd:Grace2004MiddlewareMobile} or articles within conference proceedings \cite{proc:Park2006UIMgtRmtRobots}. Several other types of article exist, but they are used to a lesser degree.
+Bibliographic references are stored in a database (.bib file extension), this contains a list of articles, proceedings, books, thesis and so forth. Each type of publication has a number of required fields such as a unique identifier, author and title. To cite a references within the main body text one must use the \emph{\textbackslash cite} command as in the following examples. \cite{book:einsteinBrownianMovement} for example is well known for his work on Brownian Movement. The SETI@Home project \cite{web:berkeleyBOINC} is an example of a webpage citation. One can also work with articles \cite{art:Moller2003HWRastArch}, MSc Thesis \cite{msc:Edberg2007FluxgateMagnetometer}, PhD Thesis \cite{phd:Grace2004MiddlewareMobile} or articles within conference proceedings \cite{proc:Park2006UIMgtRmtRobots}. Several other types of article exist, but they are used to a lesser degree.
+
+\subsection{The Harvard Bibliography Style}
+
+The bibliographic references are laid out using the Harvard style. Further information about this style may be found at the following link (\url{https://library.rgu.ac.uk/RGUHarvard}). If you want parenthesis to enclose the reference, use \textit{parencite} instead of \textit{cite}. This would change the citation style in the previous paragraph to:
+
+\parencite{book:einsteinBrownianMovement} for example is well known for his work on Brownian Movement.
 
 \subsection{Compiling a BibTeX Database}
 
@@ -110,6 +116,8 @@ The \emph{algorithm2e} environment may be used to generate algorithms (Algorithm
 \section{Inserting Program Code Samples}
 
 To insert small segments of program code (Listing~\ref{code:SampleCode}) that detail how interesting algorithms and so forth are implemented use the \emph{lstlisting} command. Inclusion of program code again requires a Caption and Label. Sample code from external files may also be included (Listing~\ref{code:externalSampleCodeLabel}), again one must supply a Caption and a Label as well as the relative path to the source file. Note a paragraph of text consisting of just a few lines is not a paragraph.
+
+\break
 
 \lstinputlisting[caption={The Caption for the Code Listing},label={code:externalSampleCodeLabel}]{usingLatex/myCodeFile.java}
 
