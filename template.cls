@@ -66,10 +66,10 @@
         \begin{center}
         \begin{minipage}{4.5in}
                 \parindent=0pt
-                I confirm that the work contained in this \@rpttype \space project report has been composed solely by myself and has not been accepted in any previous application for a degree. All sources of information have been specifically acknowledged and all verbatim extracts are distinguished by quotation marks.
+                I confirm that the work contained in this \@rpttype \space project report has been composed solely by myself and has not been accepted in any previous application for a degree. All sources of information have been specifically acknowledged and all verbatim extracts are distinguished by quotation marks. \textcolor{red}{The declaration can be found inside template.cls. Make sure you put your name and date in the dotted lines!}
                 \par
                 \vskip 2in
-                 Signed ............................................ \hspace{0.5 in} Date ......................\\
+                 Signed .....XXX XXX..... \hspace{0.2 in} Date .....01/01/1970.....\\
                  \hspace*{0.4 in} \@author 
                  \par
         \end{minipage}%
