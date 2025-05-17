@@ -1,19 +1,42 @@
+%%%%%%%%%%%% MAIN PACKAGES %%%%%%%%%%%%
 \documentclass{template}
 \usepackage{graphicx,parskip,appendix,float}
-\usepackage[ruled] {algorithm2e}
+\usepackage[ruled]{algorithm2e}
 \usepackage{url,amsmath,amssymb,fancybox,listings,pdfpages,caption,multicol,datetime,rotating, booktabs}
-%\usepackage[usenames,dvipsnames]{color}
-\usepackage[pagebackref=false,pdffitwindow=true]{hyperref}
 \usepackage{csquotes}
-\usepackage[style=authoryear,backend=biber]{biblatex}
-\addbibresource{thesis.bib}
-
-%NOTE: The hyperref usepackage should be the last \usepackage!!
+%\usepackage[usenames,dvipsnames]{color} % Don't use it as it clashes with csquote
 %NOTE: When pagebackref=true an error will appear at the end of compiling. press `q' to ignore
 %NOTE: Referencing Algorithms does not work if this usepackage is before the hyperref include.!!
-%NOTE: This is a comment, ignored when the document is compiled
-%NOTE: The following document configuration settings generally do not need to be modified
 %NOTE: More packages may need to be added to provide additional functionality
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%% LINE NUMBERS %%%%%%%%%%%%
+% If you want to add line numbers to your document and make it easier for markers to provide you feedback, uncomment the following two lines
+%\usepackage{lineno}
+%\linenumbers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%% REFERENCING STYLES %%%%%%%%%%%% 
+% Comment/Uncomment based on preference or requirement
+\usepackage[style=authoryear,giveninits,backend=biber]{biblatex} % Harvard, RGU prefers this
+%\usepackage{biblatex} % Vancouver, most people prefer this as it is simpler to follow!
+\addbibresource{thesis.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%% TRACK CHANGES AND ANNOTATIONS %%%%%%%%%%%% 
+%\usepackage{todonotes}
+%\usepackage{soul}
+% If you want to add notes, highlight or have your supervisor track changes, we recommend using these packages.
+% TODONOTES: https://tug.ctan.org/macros/latex/contrib/todonotes/todonotes.pdf
+% Soul: https://cs.brown.edu/about/system/managed/latex/doc/soul.pdf
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%% HYPERREF %%%%%%%%%%%%%%%%%%%%%%
+\usepackage[pagebackref=false,pdffitwindow=true]{hyperref} %NOTE: For this package to work properly, it has to be the last one!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \hypersetup{
     pdftitle    = {Report Title},
@@ -79,7 +102,7 @@
 \title{\huge{Report Title}}
 \author{Author Full Name}
 \degreetitle{Degree Title} % Replace with appropriate degree
-\rpttype{MSc}    % Replace MSc with BSc for Honours Degree Year projects.
+\rpttype{Degree}    % Replace MSc with BSc for Honours Degree Year projects.
 \principaladviser{Dr. XXX XXX}
 
 \include{intro/abstract}

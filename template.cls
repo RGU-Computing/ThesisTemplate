@@ -23,7 +23,7 @@
 \def\secondreader#1{\gdef\@secondreader{#1}}
 \def\submitdate#1{\gdef\@submitdate{#1}}
 \def\copyrightyear#1{\gdef\@copyrightyear{#1}} 
-\def\@title{}\def\@author{}\def\@dept{School of Computing}
+\def\@title{}\def\@author{}\def\@dept{School of Computing, Engineering and Technology}
 \def\@principaladviser{}\def\@firstreader{}\def\@secondreader{}
 \def\@submitdate{\ifcase\the\month\or
   January\or February\or March\or April\or May\or June\or
@@ -40,14 +40,14 @@
         \vskip 0.25in
                 {\Large \@author}
         \vskip 0.45in
-        \includegraphics[height=40mm]{rgulogo}
+        \includegraphics[height=40mm]{rgulogo.jpg}
         \vfill
         \vskip 0.25in
         \end{center}
         \begin{center}
                 \sc A report submitted as part of the requirements for the degree\\ of
                 \@degreetitle
- \\at the School of Computing \\Robert Gordon University\\ Aberdeen, Scotland
+ \\at the School of Computing, Engineering and Technology \\Robert Gordon University\\ Aberdeen, Scotland
 
         \end{center}
         \vfill
@@ -66,7 +66,7 @@
         \begin{center}
         \begin{minipage}{4.5in}
                 \parindent=0pt
-                I confirm that the work contained in this \@rpttype \space project report has been composed solely by myself and has not been accepted in any previous application for a degree. All sources of information have been specifically acknowledged and all verbatim extracts are distinguished by quotation marks. \textcolor{red}{The declaration can be found inside template.cls. Make sure you put your name and date in the dotted lines!}
+                I confirm that the work contained in this \@rpttype \space project report has been composed solely by myself and has not been accepted in any previous application for a degree. All sources of information have been specifically acknowledged and all verbatim extracts are distinguished by quotation marks. \textcolor{red}{The declaration can be found inside template.cls. Make sure you put your name and adjust the date in the dotted lines!}
                 \par
                 \vskip 2in
                  Signed .....XXX XXX..... \hspace{0.2 in} Date .....01/01/1970.....\\
